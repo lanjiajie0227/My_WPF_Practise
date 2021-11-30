@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="WpfApp2.Pages.Page1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp2.Pages"
+             mc:Ignorable="d" 
+             d:DesignHeight="614" d:DesignWidth="324.5">
+    
+    <Grid>
+        <Border BorderThickness="1" Background="White" BorderBrush="White">
+            <ListBox x:Name="lstImgs" ScrollViewer.VerticalScrollBarVisibility="Visible">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Image Width="150" Height="140" Source="{Binding Path=PhotoPath}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Border>
+    </Grid>
+</UserControl>
